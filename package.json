@@ -4,12 +4,17 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "start": "node lib"
+    "start": "node lib",
+    "postinstall": "node_modules/.bin/bower install --allow-root"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4",
     "socket.io": "^1.4.5"
+  },
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "mocha": "^2.4.5"
   }
 }

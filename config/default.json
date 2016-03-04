@@ -1,0 +1,14 @@
+{
+	"web": {
+		"secret": "g3Xm1cozX8WsIMsfPM3kNw=="
+	},
+	"database": {
+		"url": "mongodb://localhost:27017/etched"
+	},
+	"users": {
+
+	},
+	"sketch": {
+		
+	}
+}

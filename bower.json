@@ -1,0 +1,21 @@
+{
+  "name": "etched-multi",
+  "description": "",
+  "main": "lib/index.js",
+  "authors": [
+    "Josue Cardona <josuecardonap@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1"
+  }
+}

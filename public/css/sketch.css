@@ -1,0 +1,39 @@
+#drawHere1 {
+   /* position: absolute;*/
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 15%;
+    top: 0;
+    left: 0;
+    border: solid red;
+    opacity: 0%;
+    transform: rotate3d(0, 1, 0, 30deg);
+    -webkit-transform: rotate3d(0, 1, 0, 30deg);
+}
+
+#drawHere2 {
+    /*position: relative;*/
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 15%;
+    top: 0;
+    right: 0;
+    border: solid red;
+    opacity: 0%;
+    transform: rotate3d(0, 1, 0, -30deg);
+    -webkit-transform: rotate3d(0, 1, 0, -30deg);
+}
+
+body {
+    perspective: 200px;
+    webkit-perspective: 200px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+

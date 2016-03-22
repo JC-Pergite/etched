@@ -1,11 +1,10 @@
 {
   "name": "etched-multi",
   "version": "1.0.0",
-  "description": "",
   "main": "lib/index.js",
   "scripts": {
     "start": "node lib",
-    "postinstall": "node_modules/.bin/bower install --allow-root"
+    "postinstall": "bower install --allow-root"
   },
   "author": "",
   "license": "ISC",
@@ -27,5 +26,14 @@
   "devDependencies": {
     "bower": "^1.7.7",
     "mocha": "^2.4.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JC-Pergite/etched.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JC-Pergite/etched/issues"
+  },
+  "homepage": "https://github.com/JC-Pergite/etched#readme",
+  "description": ""
 }

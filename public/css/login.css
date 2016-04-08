@@ -1,0 +1,48 @@
+	body {
+    background-color: #FCFCFC;
+  }
+
+  #top {
+		width: 100%;
+		height: 60pt;
+    background-color: rgba(157, 20, 31, 0.88)
+	}
+
+  h1 {
+    font-size: 4em;
+    text-align: center;
+    font-family: "Copperplate", "Copperplate Gothic Light", sans-serif;
+  }
+
+  .wrap {
+    margin-left: 160pt;
+    margin-top: 20pt;
+    width: 680px;
+    height: 470px;
+    background-color: #171716;
+    opacity: .8;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: "Copperplate", "Copperplate Gothic Light", sans-serif;
+}
+
+p {
+    font-family: "Copperplate", "Copperplate Gothic Light", sans-serif;
+    color: #BBB3B4;
+}
+
+.pulse {
+  -webkit-animation: pulse 1500ms 3;
+  -webkit-animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes "pulse" {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+
+  
+

@@ -13,7 +13,7 @@ const main = () => {
 
 const generate_color = () => "#"+((1<<24)*Math.random()|0).toString(16)
 
-var current_color = user.color || generate_color(); //'#6E6767';
+var current_color = user.color || generate_color(); 
 
 user.color = current_color;
 
@@ -102,7 +102,6 @@ function followKeyDown(e) {
               x -= 10;
               context1.fillRect(x, y, 10, 10);
               send_movement('context1', x, y, context1.fillStyle);
-              console.log('LEFT pressed ' + x);
             }
             return x;
 
@@ -120,7 +119,6 @@ function followKeyDown(e) {
               y -= 10;
               context1.fillRect(x, y, 10, 10);
               send_movement('context1', x, y, context1.fillStyle);
-              console.log('UP pressed ' + y);
             }
           
             return y;
@@ -137,7 +135,6 @@ function followKeyDown(e) {
               x += 10;
               context1.fillRect(x, y, 10, 10); 
               send_movement('context1', x, y, context1.fillStyle);
-              console.log('RIGHT pressed ' + x);
             }
             
             return x;
@@ -154,23 +151,15 @@ function followKeyDown(e) {
             y += 10;    
             context1.fillRect(x, y, 10, 10); 
             send_movement('context1', x, y, context1.fillStyle);
-            console.log('DOWN pressed ' + y);
             }
             return y;
             break;
-    } // Switch END 
-    
-    
+    } // Switch END  
 } // followKeyDown END
 
 
-
-
-
-
-
 function mirrorKeyDown(ev) { 
-    // debugger;   
+    
     ev.preventDefault();
 
     switch(ev.which) {
@@ -178,8 +167,6 @@ function mirrorKeyDown(ev) {
         case 37:
 
            if (u < -200) {
-               // debugger;
-
               context2.save();
               canvas2.blur();
               canvas1.focus();
@@ -192,8 +179,6 @@ function mirrorKeyDown(ev) {
               context2.fillRect(u, w, 10, 10);
               u -= 10;
               send_movement('context2', u, w, context2.fillStyle);
-              console.log('LEFT pressed ' + u);
-
             }
           
             return u;
@@ -211,7 +196,6 @@ function mirrorKeyDown(ev) {
               context2.fillRect(u, w, 10, 10);
               w -= 10;
               send_movement('context2', u, w, context2.fillStyle);
-              console.log('UP pressed ' + w);
             }
             
           
@@ -230,7 +214,6 @@ function mirrorKeyDown(ev) {
               context2.fillRect(u, w, 10, 10);
               u += 10;
               send_movement('context2', u, w, context2.fillStyle);
-              console.log('RIGHT pressed ' + u);
             }
             
             return u;
@@ -247,44 +230,13 @@ function mirrorKeyDown(ev) {
             context2.fillRect(u, w, 10, 10);
             w += 10;
             send_movement('context2', u, w, context2.fillStyle);
-            console.log('DOWN pressed ' + w);
             }
             return w;
             break;
-    } // Switch END 
-    
-    
+    } // Switch END    
 } // mirrorKeyDown END
 
 
-
-
-// var etchImg = new Image();
-// etchImg.onload = function() {
-//     followKeyDown();
-// };
-// etchImg.src = 'http://s3files.core77.com/blog/images/2013/02/etch-a-sketch-13-01.jpg';
-
-
-// context.clip()
-
-  // var thing = Object.create();
-  // thing.x = 243;
-  // thing.y = 168;
-// context.beginPath(); context.moveTo(20,20); context.lineTo(100, 100); context.closePath(); context.stroke();
-// } else {
-//  console.log("no")
-// }
-
-
-
-// var thing = {"x" : x, "y" : y}
-
-// $(document).ready(function(){ 
-
-
-
-// }); // document ready end
 socket.emit('replay')
 }
 

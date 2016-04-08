@@ -3,15 +3,27 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="">
+	<title>Etched</title>
+	<link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-	<form action="/login" method="POST">
-		<input placeholder="Username" name="username" type="text"/>
-		<input placeholder="Password" name="password" type="password"/>
+	<div id="top"> 
+		<h1>Etched</h1>
+	</div>
+		<form action="/login" method="POST" class="login">
+			<input placeholder="Username" name="username" type="text"/>
+			<input placeholder="Password" name="password" type="password"/>
+			<input name="submit" type="submit" value="Login" class="pulse"/>
+		</form>
+  <div class="wrap">
+    <h2>A '3D' Real-time Multiplayer Canvas</h2>
+      <p> 
+          Watch your imagination take new life as you use your keyboard's arrow keys
+          to draw a three-dimensional creation of your own across two seperate walls you freely jump to by crossing over through the left - that is unless friends
+          decide to join in, so together you dream up entirely different possibilities!
+      </p>
+  </div>
 
-		<input name="submit" type="submit" value="Login"/>
-	</form>
+		<script src="js/login.js"></script>
 </body>
 </html>

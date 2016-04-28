@@ -1,22 +1,22 @@
-	body {
+body {
     background-color: #FCFCFC;
-  }
+}
 
-  #top {
-		width: 100%;
-		height: 60pt;
-    background-color: rgba(157, 20, 31, 0.88);
-	}
+#top {
+	width: 100%;
+	height: 60pt;  
+    background-color: rgba(157, 20, 31, 0.88)
+}
 
-  h1 {
+h1 {
     font-size: 4em;
     text-align: center;
     font-family: "Copperplate", "Copperplate Gothic Light", sans-serif;
     color: #FACBB7;
     padding-top: 5pt;
-  }
+}
 
-  .wrap {
+.wrap {
     margin-left: 160pt;
     margin-top: 20pt;
     width: 680px;
@@ -34,17 +34,25 @@ h2 {
 }
 
 p {
-    font-family: "Copperplate", "Copperplate Gothic Light", sans-serif;
-  
+    font-family: "Copperplate", "Copperplate Gothic Light", sans-serif; 
+    color: #FACBB7;
 }
+
 
 input[type="submit"] {
-  -flex: 0 0 110px;
+   -flex: 0 0 110px;
+
 }
 
+.bold {
+    font-weight: bold;
+    color: skyblue;
+}
+
+
 .pulse {
-  -webkit-animation: pulse 1500ms 3;
-  -webkit-animation-fill-mode: backwards;
+   -webkit-animation: pulse 1500ms 3;
+   -webkit-animation-fill-mode: backwards;
 }
 
 @-webkit-keyframes "pulse" {

@@ -4,14 +4,25 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
-	<form action="/signup" method="POST">
-		<input placeholder="Username" name="username" type="text"/>
-		<input placeholder="Password" name="password" type="password"/>
-
-		<input name="submit" type="submit" value="Sign up"/>
-	</form>
+	<div id="top"> 
+		<h1>Etched</h1>
+  </div>
+		<form action="/signup" method="POST" class="signup">
+			<input placeholder="Username" name="username" type="text"/>
+			<input placeholder="Password" name="password" type="password"/>
+			<input name="submit" type="submit" value="Sign Up!" class="pulse bold"/>
+		</form>
+  <div class="wrap">
+    <h2>A '3D' Real-time Multiplayer Canvas</h2>
+      <p> 
+          Watch your imagination take new life as you use your keyboard's arrow keys
+          to draw a three-dimensional creation of your own across two seperate walls you freely jump to by crossing over through the left - that is unless friends
+          decide to join in, so together you dream up entirely different possibilities!
+      </p>
+  </div>
+  <script src="js/signup.js"></script>
 </body>
 </html>

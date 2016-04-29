@@ -46,12 +46,14 @@ input[type="submit"] {
 
 .bold {
     font-weight: bold;
-    color: skyblue;
+    border-radius: 4pt;
+    color: whitesmoke;
+    background-color:  #3823C1;
 }
 
 
 .pulse {
-   -webkit-animation: pulse 1500ms 3;
+   -webkit-animation: pulse 1500ms 2;
    -webkit-animation-fill-mode: backwards;
 }
 

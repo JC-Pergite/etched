@@ -35,6 +35,8 @@ h2 {
 
 p {
     font-family: "Copperplate", "Copperplate Gothic Light", sans-serif;
+    color: #FACBB7;
+}
   
 }
 
@@ -42,16 +44,10 @@ input[type="submit"] {
   -flex: 0 0 110px;
 }
 
-.pulse {
-  -webkit-animation: pulse 1500ms 3;
-  -webkit-animation-fill-mode: backwards;
+.bord {
+  font-weight: bold;
+  border-radius: 4pt;
+  color: whitesmoke;
+  background-color:  #3823C1;
 }
-
-@-webkit-keyframes "pulse" {
-    0% {opacity: 1;}
-    100% {opacity: 0;}
-}
-
-
-  
 

@@ -16,6 +16,12 @@ h1 {
     padding-top: 5pt;
 }
 
+
+.wrap video {
+    max-height: 100%;
+    max-width: 680px;
+}
+
 .wrap {
     margin-left: 160pt;
     margin-top: 20pt;

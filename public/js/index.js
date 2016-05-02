@@ -246,6 +246,10 @@ socket.emit('user', (user) => {
   main(100);
 });
 
+socket.on('refresh', () => {
+  window.refresh_canvas();
+});
+
 
 window.main = main;
 
@@ -259,6 +263,7 @@ const refresh_canvas = () => {
   });
   window.main();
 };
+
 
 window.refresh_canvas = refresh_canvas;
 

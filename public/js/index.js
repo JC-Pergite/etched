@@ -248,4 +248,35 @@ socket.emit('user', (user) => {
 });
 
 
+window.main = main;
+
 })(); // Ready end
+
+
+const refresh_canvas = () => {
+     $('canvas').remove();
+  [1,2].forEach((id) => {
+    $(`<canvas id="drawHere${id}" tabindex="0"></canvas>`).appendTo('body');
+  });
+  window.main();
+};
+
+window.refresh_canvas = refresh_canvas;
+
+
+
+$(document).on({
+  click: function () {
+    window.socket.emit('user.remove', () => {
+      window.refresh_canvas();
+    });
+  }
+}, '#desolate');
+
+$(document).on({
+  click: function () {
+    window.socket.emit('reverse', () => {
+      window.refresh_canvas();
+    });
+  }
+}, '#reverse');

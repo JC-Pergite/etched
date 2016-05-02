@@ -10,4 +10,6 @@ ENV PORT 80
 
 RUN /bin/bash -c 'cd /app && npm install'
 
+RUN /bin/bash -c 'cd /app && node_modules/.bin/bower install --allow-root'
+
 CMD /bin/bash -c 'cd /app && npm start'

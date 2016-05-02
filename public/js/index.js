@@ -9,7 +9,7 @@ const socket = io.connect(`/?session_token=${window.session_token}`);
 window.socket = socket;
 
 
-const main = () => {
+const main = (delay) => {
 
 const generate_color = () => "#"+((1<<24)*Math.random()|0).toString(16)
 
@@ -237,14 +237,13 @@ function mirrorKeyDown(ev) {
 } // mirrorKeyDown END
 
 
-socket.emit('replay')
+  socket.emit('replay', (delay || 0))
 }
 
 socket.emit('user', (user) => {
   window.user = user;
 
-
-  main();
+  main(100);
 });
 
 
